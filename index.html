@@ -400,6 +400,11 @@ const letterBody = document.getElementById('love-letter-body');
   letterBody.appendChild(p);
 });
 
+// Dos letras cifradas, dejadas como una pequeña errata al terminar la carta.
+const secretLetterFragment=document.createElement('p');
+secretLetterFragment.textContent='u q';
+letterBody.appendChild(secretLetterFragment);
+
 const startScreen = document.getElementById('start-screen');
 const audio = document.getElementById('audio');
 audio.src = CONFIG.musica;
